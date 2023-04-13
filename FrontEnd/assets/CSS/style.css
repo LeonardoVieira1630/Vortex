@@ -1,0 +1,549 @@
+*{
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+:root {
+    --ff-heading: 'Poppins', 'sans-serif';
+
+
+    font-size: 62.5%; /*10px*/
+
+    /*-----For Desktop-----*/
+    --fs-dkt-heading: 2.0rem;
+    --fs-dkt-body: 3.2rem;
+    --fs-dkt-texts: 1.8rem;
+
+    --fs-dkt-bots-head: 2.4rem;
+    --fs-dkt-bots-text: 2.0rem;
+
+    --fs-dkt-team-name: 1.6rem;
+    --fs-dkt-team-job: 1.8rem;
+
+    /*-----For Mobile-----*/
+
+    --fs-mbl-heading: 1.6rem;
+    --fs-mbl-body: 1.8rem;
+    --fs-mbl-texts: 1.2rem;
+
+    --fs-mbl-bots-head: 1.2rem;
+    --fs-mbl-bots-text: 1.0rem;
+
+    --fs-mbl-team-name: .8rem;
+    --fs-mbl-team-job: 1.0rem;
+    
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(0deg, #4f0a85, #4f0a85);
+}
+
+
+/*-------------------- Header --------------------*/
+
+header {
+    background: rgba(54, 29, 105, 0.9);
+    position: sticky;
+    top: 0;
+
+    width: 100%;
+    z-index: 999; /* This will bring the header in front of the main body part, because its specifiyng the stack order of the elements*/
+}
+
+header img {
+    height: 4.6rem;
+    width: 4.6rem;
+}
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+.login-button button {
+    border: none;
+    background-color: blueviolet;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.login-button button a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+
+/*-------------------- Main --------------------*/
+
+main {
+    margin-top: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+/*-------------------- Slider --------------------*/
+
+.img-slider {
+    position: relative;
+    width: 80rem;
+    height: 40rem;
+    margin-top: -35rem;
+}
+
+.img-slider .slide {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    clip-path: circle(0% at 0 50%);
+}
+
+.img-slider .slide.active {
+    clip-path: circle(150% at 0 50%);
+    transition: 2s;
+    transition-property: clip-path;
+}
+
+.img-slider .slide img {
+    z-index: 1;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.img-slider .slide .info {
+    position: absolute;
+    top: 0;
+    padding: 1.5rem 3.0rem;
+}
+
+.img-slider .slide .info h2 {
+    color: #ffffff;
+    font-size: 3.0rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: .2rem;
+}
+
+.img-slider .slide .info p {
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
+    width: 60%;
+    padding: 1.0rem;
+    border-radius: 4px;
+}
+
+.img-slider .navigation {
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    bottom: 3.0rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.img-slider .navigation .btn {
+    background: rgba(255, 255, 255, 0.5);
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: 1.0rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.img-slider .navigation .btn.active {
+    background: rgb(7, 43, 97);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+
+/*-------------------- About Section --------------------*/
+
+.aboutSectionContainer {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    text-align: left;
+}
+
+.aboutSectionContainer img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.aboutSectionContainer_texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.aboutSectionContainer h1 {
+    width: 300px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+
+    color: #ffffff;
+}
+
+.aboutSectionContainer p {
+    width: 300px;
+    height: 250px;
+    margin-left: 42px;
+    margin-right: 42px;
+
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 18px;
+
+    color: #ffffff;
+}
+
+
+
+/*-------------------- Bot Section --------------------*/
+
+.botSectionContainer {
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.botSectionContainer h1 {
+    width: 300px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+
+    color: #ffffff;
+}
+
+.botSectionContainer .bot-swiper {
+    width: 100%;
+    height: 15rem;
+    background-color: green;
+
+    display: flex;
+    align-items: center;
+}
+
+.swiper-wrapper {
+    width: 100%;
+    height: 80%;
+    padding: 0 20px 0px 20px;
+    background-color: red;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.swiper-slide {
+    width: 10rem;
+    height: 100%;
+    background-color: blue;
+
+    border-radius: 20px;
+}
+
+.swiper-slide h3 {
+    color: #ffffff;
+    font-size: 1.2rem;
+    width: 60%;
+    padding: 1.0rem;
+    border-radius: 4px;
+}
+
+
+
+@media screen and (max-width: 730px) {
+
+    /*-------------------- Header --------------------*/
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .login-button {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding: 1.2rem;
+    }
+
+    .mobile-meu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+
+    .mobile-meu .login-button button {
+        width: 100%;
+    }
+
+    .open {
+        display: block;
+    }
+
+    /*-------------------- Slider --------------------*/
+
+    .img-slider {
+        width: 60rem;
+        height: 37.5rem;
+    }
+
+    .img-slider .slide .info {
+        padding: 1rem 2.5rem;
+    }
+
+    .img-slider .slide .info h2 {
+        font-size: 2.5rem;
+    }
+
+    .img-slider .slide .info p {
+        width: 70%;
+        font-size: 1.0rem;
+    }
+
+    .img-slider .navigation {
+        border: 2.5rem;
+    }
+
+    .img-slider .navigation .btn {
+        width: 1.0rem;
+        height: 1.0rem;
+        margin: .8rem;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 420px) {
+
+    /*-------------------- Header --------------------*/
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .login-button {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding: 1.2rem;
+    }
+
+    .mobile-meu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+
+    .mobile-meu .login-button button {
+        width: 100%;
+    }
+
+    .open {
+        display: block;
+    }
+
+    /*-------------------- Slider --------------------*/
+
+    .img-slider {
+        width: 32rem;
+        height: 20rem;
+    }
+
+    .img-slider .slide .info {
+        padding: 0.5rem 1.0rem;
+    }
+
+    .img-slider .slide .info h2 {
+        font-size: 2.0rem;
+    }
+
+    .img-slider .slide .info p {
+        width: 90%;
+        font-size: .8rem;
+    }
+
+    .img-slider .navigation {
+        border: 1.0rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+#optionsButton {
+    width: 4.6rem;
+    height: 4.6rem;
+    padding-right: 50px;
+    border-radius: 1.0rem;
+
+    background-color: aqua;
+    cursor: pointer;
+
+    transition: background 0.3s;
+    
+}
+
+#optionsButton:hover {
+    background-color: red;
+}
+
+.mainHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+}
+
+.mainHeader ul {
+    display: flex;
+    flex-direction: row;
+    
+    font-family: var(--ff-heading);
+    font-size: var(--fs-heading);
+    font-weight: 700;
+
+    color: #ffffff;
+}
+
+
+.loginSection {
+    display: flex;
+    flex-direction: row;
+    margin-left: 80%;
+}
+/

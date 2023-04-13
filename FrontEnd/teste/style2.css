@@ -1,0 +1,18 @@
+@media (max-width: 768px) {
+    .card-slider {
+      /* Adjust container width for smaller screens */
+      width: 80%;
+    }
+    .card {
+      /* Adjust card width and margins for smaller screens */
+      width: 80%;
+      margin: 0 10%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .card {
+      /* Adjust font sizes for smaller screens */
+      font-size: 0.8em;
+    }
+  }

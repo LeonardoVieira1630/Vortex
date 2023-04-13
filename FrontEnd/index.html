@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAB Website</title>
+    <!--     Google FONTS     -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!--     Swiper CSS     -->
+    <link rel="stylesheet" href="CSS/swiper-bundle.min.css">
+    <!--     Style     -->
+    <link rel="stylesheet" href="assets/CSS/style.css">
+</head>
+
+<body>
+    <header>
+
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="assets/IMG/Gyraph_logo_alone.png" alt="">
+            </div>
+
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#Graphics_id" class="nav-link"
+                            data-text="&nbsp;Graphics">&nbsp;Graphics&nbsp;</a></li>
+
+                    <li class="nav-item"><a href="#About_id" class="nav-link"
+                            data-text="&nbsp;About">&nbsp;About&nbsp;</a></li>
+
+                    <li class="nav-item"><a href="#Bots_id" class="nav-link" data-text="&nbsp;Bots">&nbsp;Bots&nbsp;</a>
+                    </li>
+
+                    <li class="nav-item"><a href="#Team_id" class="nav-link" data-text="&nbsp;Team">&nbsp;Team&nbsp;</a>
+                    </li>
+
+                    <li class="nav-item"><a href="#Contact_id" class="nav-link"
+                            data-text="&nbsp;Contact">&nbsp;Contact&nbsp;</a></li>
+
+                </ul>
+            </div>
+
+            <div class="login-button">
+                <button><a href="#">Login</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets/IMG/menu_white_36dp.svg"></button>
+            </div>
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#Graphics_id" class="nav-link"
+                        data-text="&nbsp;Graphics">&nbsp;Graphics&nbsp;</a></li>
+                <li class="nav-item"><a href="#About_id" class="nav-link" data-text="&nbsp;About">&nbsp;About&nbsp;</a>
+                </li>
+                <li class="nav-item"><a href="#Bots_id" class="nav-link" data-text="&nbsp;Bots">&nbsp;Bots&nbsp;</a>
+                </li>
+                <li class="nav-item"><a href="#Team_id" class="nav-link" data-text="&nbsp;Team">&nbsp;Team&nbsp;</a>
+                </li>
+                <li class="nav-item"><a href="#Contact_id" class="nav-link"
+                        data-text="&nbsp;Contact">&nbsp;Contact&nbsp;</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <div id="Graphics_id" class="img-slider">
+
+            <div class="slide-container">
+                <div class="slide active">
+                    <img src="assets/IMG/SliderImage.png" alt="">
+                    <div class="info">
+                        <h2>Slide 01</h2>
+                        <p>Lorem ipsolom 12345678 asjadhjashd asas</p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="assets/IMG/SliderImage.png" alt="">
+                    <div class="info">
+                        <h2>Slide 02</h2>
+                        <p>Lorem ipsolom 12345678 asjadhjashd asas</p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="assets/IMG/SliderImage.png" alt="">
+                    <div class="info">
+                        <h2>Slide 03</h2>
+                        <p>Lorem ipsolom 12345678 asjadhjashd asas</p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="assets/IMG/SliderImage.png" alt="">
+                    <div class="info">
+                        <h2>Slide 04</h2>
+                        <p>Lorem ipsolom 12345678 asjadhjashd asas</p>
+                    </div>
+                </div>
+                <div class="navigation">
+                    <div class="btn active"></div>
+                    <div class="btn"></div>
+                    <div class="btn"></div>
+                    <div class="btn"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="About_id" class="aboutSectionContainer">
+            <img src="assets/IMG/Gyraph_logo_alone.png" alt="">
+
+            <div class="aboutSectionContainer_texts">
+                <h1>T.A.B (Trade Asynchronous Bot)</h1>
+
+                <p>T.A.B (Trade Asynchronous Bot) é um software
+                    desenvolvido em Python para ser capaz de fazer
+                    operações de compra e venda de criptomoedas.
+                    Alem disso, ele tem autonomia de decisão nas
+                    transações pois é capaz de jugar o melhor
+                    momento de faze-las.
+                    Para montar a lógica do robô e torna-lo
+                    realmente eficiente, levamos em consideração
+                    os conceitos apresentados em:
+
+                    The Axioms of Zurich – Max Gunther.
+                    Technical Analysis of the Financial Markets: A
+                    Comprehensive Guide to Trading Methods and
+                    Applications - John J. Murphy.</p>
+            </div>
+
+
+        </div>
+
+
+        <div id="Bots_id" class="botSectionContainer">
+            <h1>Test Different Bots</h1>
+
+            <div class="bot-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <h3 class="bot-name">Bot-01</h3>
+                        <p class="bot-spec">Specific details about this bot.</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <h3 class="bot-name">Bot-02</h3>
+                        <p class="bot-spec">Specific details about this bot.</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <h3 class="bot-name">Bot-03</h3>
+                        <p class="bot-spec">Specific details about this bot.</p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <div id="Team_id" class="teamSectionContainer">
+            <h1>Meet our Team</h1>
+
+            <div class="bot-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <h3 class="bot-name">Leonardo</h3>
+                        <p class="bot-spec">Specific details about this bot.</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <h3 class="bot-name">Caique</h3>
+                        <p class="bot-spec">Specific details about this bot.</p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        </div>
+
+
+
+    </main>
+
+    <Footer></Footer>
+
+    <script src="assets/JS/script.js"></script>
+</body>
+
+</html>
