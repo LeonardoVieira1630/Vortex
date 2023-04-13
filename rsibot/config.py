@@ -1,2 +1,2 @@
-API_KEY = 'yourbinanceapikey'
-API_SECRET = 'yourbinanceapisecret'
+API_KEY = '50FZuwILnxCTdkDXAOfmWtUhsOQgDE2dGTwKDg7ot0ti2Zl9OVVnjx6c06psjoI1'
+SECRET_KEY = 'sSSQNAikw0tML6cEeQT1HIPASlwbfxD3Qq8bEBaacGBBniKqA2v9SscwZnjZkHf7'
