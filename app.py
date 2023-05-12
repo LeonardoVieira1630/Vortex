@@ -66,7 +66,7 @@ def settings():
 #End-point para as informações do grafico.
 @app.route('/history')
 def history():
-    candlesticks = client.get_historical_klines_generator("BTCUSDT", Client.KLINE_INTERVAL_5MINUTE, "6 Sep, 2021")
+    candlesticks = client.get_historical_klines("BTCUSDT", Client.KLINE_INTERVAL_5MINUTE)
 
     processed_candlesticks = []
 
