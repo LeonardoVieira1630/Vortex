@@ -7,7 +7,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TAB Website</title>
+    <title>VORTEX Website</title>
 
     <!--     Google FONTS     -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
     <!--     Style     -->
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='assets/CSS/style.css') }}" />
 
     <!--Teste js leo grafico-->
     <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
@@ -27,7 +27,7 @@
 
         <nav class="nav-bar">
             <div class="logo">
-                <img src="assets/IMG/Gyraph_logo_alone.png" alt="">
+                <img src="{{ url_for('static',filename='assets/IMG/Gyraph_logo_alone.png') }}" alt="">
             </div>
 
             <div class="nav-list">
@@ -55,20 +55,22 @@
             </div>
 
             <div class="mobile-menu-icon">
-                <button onclick="menuShow()"><img class="icon" src="assets/IMG/menu_white_36dp.svg"></button>
+                <button onclick="menuShow()"><img class="icon" src="{{ url_for('static',filename='assets/IMG/menu_white_36dp.svg') }}"></button>
             </div>
         </nav>
 
         <div class="mobile-menu">
             <ul>
-                <li class="nav-item"><a href="#Graphics_id" class="nav-link" data-text="&nbsp;Graphics">&nbsp;Graphics&nbsp;</a></li>
+                <li class="nav-item"><a href="#Graphics_id" class="nav-link"
+                        data-text="&nbsp;Graphics">&nbsp;Graphics&nbsp;</a></li>
                 <li class="nav-item"><a href="#About_id" class="nav-link" data-text="&nbsp;About">&nbsp;About&nbsp;</a>
                 </li>
                 <li class="nav-item"><a href="#Bots_id" class="nav-link" data-text="&nbsp;Bots">&nbsp;Bots&nbsp;</a>
                 </li>
                 <li class="nav-item"><a href="#Team_id" class="nav-link" data-text="&nbsp;Team">&nbsp;Team&nbsp;</a>
                 </li>
-                <li class="nav-item"><a href="#Contact_id" class="nav-link" data-text="&nbsp;Contact">&nbsp;Contact&nbsp;</a></li>
+                <li class="nav-item"><a href="#Contact_id" class="nav-link"
+                        data-text="&nbsp;Contact">&nbsp;Contact&nbsp;</a></li>
             </ul>
 
             <div class="login-button">
@@ -80,52 +82,12 @@
     <main>
 
         <div id="Graphics_id" class="img-slider">
-
-            <div class="slide-container">
-                <div class="slide active">
-                    <div class="chart" id="chart"></div>
-                    <div class="info">
-                        <h2>Slide 01</h2>
-                        <p>Lorem ipsolom 12345678 asjadhjashd asas</p>
-                    </div>
-                </div>
-
-                <div class="slide active">
-                    <div class="chart" id="chart"></div>
-                    <div class="info">
-                        <h2>Slide 02</h2>
-                        <p>Lorem ipsolom 12345678 asjadhjashd asas</p>
-                    </div>
-                </div>
-
-                <div class="slide active">
-                    <div class="chart" id="chart"></div>
-                    <div class="info">
-                        <h2>Slide 03</h2>
-                        <p>Lorem ipsolom 12345678 asjadhjashd asas</p>
-                    </div>
-                </div>
-
-                <div class="slide active">
-                    <div class="chart" id="chart"></div>
-                    <div class="info">
-                        <h2>Slide 01</h2>
-                        <p>Lorem ipsolom 12345678 asjadhjashd asas</p>
-                    </div>
-                </div>
-
-                <div class="navigation">
-                    <div class="btn active"></div>
-                    <div class="btn"></div>
-                    <div class="btn"></div>
-                    <div class="btn"></div>
-                </div>
-            </div>
+            <div class="chart" id="chart"></div>
         </div>
 
 
         <div id="About_id" class="aboutSectionContainer">
-            <img src="assets/IMG/Gyraph_logo_alone.png" alt="">
+            <img src="{{ url_for('static',filename='assets/IMG/Gyraph_logo_alone.png') }}" alt="">
 
             <div class="aboutSectionContainer_texts">
                 <h1>T.A.B (Trade Asynchronous Bot)</h1>
@@ -207,12 +169,12 @@
                     <div class="swiper-slide">
                         <h3 class="member-name">Leonardo</h3>
                         <p class="member-spec">Software Developer</p>
-                        <img class="team_photo" src="/assets/IMG/Leonardo_Vieira.jpeg" alt="">
+                        <img class="team_photo" src="{{ url_for('static',filename='assets/IMG/Leonardo_Vieira.jpeg') }}" alt="">
                     </div>
                     <div class="swiper-slide">
                         <h3 class="member-name">Caique</h3>
                         <p class="member-spec">FullStack Developer</p>
-                        <img class="team_photo" src="/assets/IMG/Caique_Sales.jpeg" alt="">
+                        <img class="team_photo" src="{{ url_for('static',filename='assets/IMG/Caique_Sales.jpeg') }}" alt="">
                     </div>
                 </div>
                 <div class="swiper-pagination"></div>
