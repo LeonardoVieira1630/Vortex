@@ -1,18 +1,78 @@
-@media (max-width: 768px) {
-    .card-slider {
-      /* Adjust container width for smaller screens */
-      width: 80%;
-    }
-    .card {
-      /* Adjust card width and margins for smaller screens */
-      width: 80%;
-      margin: 0 10%;
-    }
-  }
-  
-  @media (max-width: 576px) {
-    .card {
-      /* Adjust font sizes for smaller screens */
-      font-size: 0.8em;
-    }
-  }
+#Bots_id {
+  margin-top: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 60px;
+  padding-right: 60px;
+
+  background-color: blue;
+  width: 385px;
+  height: 320px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 50px;
+}
+
+#Bots_id h1 {
+  width: 300px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+
+    color: #ffffff;
+}
+
+.mySwiper {
+  height: 300px;
+  width: 100vw;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  width: 120px;
+  height: 150px;
+  border-radius: 20px;
+  color: black;
+  background-color: #ffffff;
+}
+
+.swiper-slide h3 {
+  padding-top: 8px;
+  text-align: center;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.swiper-slide p {
+  padding-top: 8px;
+  text-align: center;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px
+}
+
+.swiper-slide img{
+  display: block;
+  width: 100px;
+  height: 78px;
+  object-fit: cover;
+}

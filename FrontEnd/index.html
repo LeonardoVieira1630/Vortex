@@ -8,10 +8,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TAB Website</title>
+ 
     <!--     Google FONTS     -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
     <!--     Swiper CSS     -->
-    <link rel="stylesheet" href="CSS/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
     <!--     Style     -->
     <link rel="stylesheet" href="assets/CSS/style.css">
 </head>
@@ -74,7 +77,7 @@
     </header>
 
     <main>
-
+        <div class="chart" id="chart"></div>
         <div id="Graphics_id" class="img-slider">
 
             <div class="slide-container">
@@ -144,53 +147,107 @@
 
         </div>
 
-
-        <div id="Bots_id" class="botSectionContainer">
+        <!-- Swiper -->
+        <div id="Bots_id" class="botsSectionContainer">
             <h1>Test Different Bots</h1>
 
-            <div class="bot-swiper">
+            <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <h3 class="bot-name">Bot-01</h3>
                         <p class="bot-spec">Specific details about this bot.</p>
+                        <img src="https://images.unsplash.com/photo-1538127426967-75a6c73f6d20?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80"
+                            alt="">
                     </div>
                     <div class="swiper-slide">
                         <h3 class="bot-name">Bot-02</h3>
                         <p class="bot-spec">Specific details about this bot.</p>
+                        <img src="https://images.unsplash.com/photo-1618641662184-bafefb91a542?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80"
+                            alt="">
                     </div>
                     <div class="swiper-slide">
                         <h3 class="bot-name">Bot-03</h3>
                         <p class="bot-spec">Specific details about this bot.</p>
+                        <img src="https://images.unsplash.com/photo-1472645977521-95bbf4f0a748?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                            alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <h3 class="bot-name">Bot-04</h3>
+                        <p class="bot-spec">Specific details: Coming soon...</p>
+                        <img src="https://images.unsplash.com/photo-1579772991680-1194ef83d407?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                            alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <h3 class="bot-name">Bot-05</h3>
+                        <p class="bot-spec">Specific details: Coming soon...</p>
+                        <img src="https://images.unsplash.com/photo-1598977123118-4e30ba3c4f5b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                            alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <h3 class="bot-name">Bot-06</h3>
+                        <p class="bot-spec">Specific details: Coming soon...</p>
+                        <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"
+                            alt="">
                     </div>
                 </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
                 <div class="swiper-pagination"></div>
             </div>
         </div>
+
 
         <div id="Team_id" class="teamSectionContainer">
             <h1>Meet our Team</h1>
 
-            <div class="bot-swiper">
+            <div class="member-swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <h3 class="bot-name">Leonardo</h3>
-                        <p class="bot-spec">Specific details about this bot.</p>
+                        <h3 class="member-name">Leonardo</h3>
+                        <p class="member-spec">Software Developer</p>
+                        <img class="team_photo" src="/assets/IMG/Leonardo_Vieira.jpeg" alt="">
                     </div>
                     <div class="swiper-slide">
-                        <h3 class="bot-name">Caique</h3>
-                        <p class="bot-spec">Specific details about this bot.</p>
+                        <h3 class="member-name">Caique</h3>
+                        <p class="member-spec">FullStack Developer</p>
+                        <img class="team_photo" src="/assets/IMG/Caique_Sales.jpeg" alt="">
                     </div>
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
         </div>
-        </div>
+
+
+
 
 
 
     </main>
 
-    <Footer></Footer>
+    <footer id="Contact_id">
+
+        <div class="footer-content">
+            <h3> TAB project</h3>
+            <p>Helping investors make the best of crypto transaction.<br>
+                Facilitating the attainment of a wealthier future.<br>
+                Making your life easier by taking the responsability of investing.</p>
+            <ul class="socials">
+                <li><a href="https://www.facebook.com/shakira/?locale=pt_BR" target="_blank" id="Facebook"></a></li>
+                <li><a href="https://www.linkedin.com/in/caique-sales-miranda-gomes-9b9a66185/" target="_blank"
+                        id="LinkedIn"></a></li>
+                <li><a href="https://twitter.com/BarackObama" target="_blank" id="Twitter"></a></li>
+
+            </ul>
+        </div>
+
+        <div class="footer-bottom">
+            <p>copyright &copy;2023 TAB PROJECT. designed by <span>kiqsmg and leo_vieira</span></p>
+        </div>
+    </footer>
+    
+    <script src="{{ url_for('static' , filename='chart.js') }}"></script>  <!--JS LEO-->
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script src="assets/JS/script.js"></script>
 </body>

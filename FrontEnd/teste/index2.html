@@ -1,34 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="style2.css">
-    <title>Document</title>
-</head>
-<body>
-    <div class="card-slider">
-        <div class="card">
-          <img src="hinata_picture.svg">
-          <h3>Card Title 1</h3>
-          <p>Card content goes here</p>
-          <button>Read More</button>
-        </div>
-        <div class="card">
-          <img src="image2.jpg">
-          <h3>Card Title 2</h3>
-          <p>Card content goes here</p>
-          <button>Read More</button>
-        </div>
-        <div class="card">
-          <img src="image3.jpg">
-          <h3>Card Title 3</h3>
-          <p>Card content goes here</p>
-          <button>Read More</button>
-        </div>
-      </div>
-</body>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
 
-<script src="script2.js"></script>
+    <!-- Demo styles -->
+
+  </head>
+
+  <body>
+    <!-- Swiper -->
+    <div id="Bots_id" class="botsSectionContainer">
+      <h1>Test Different Bots</h1>
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <h3 class="bot-name">Bot-01</h3>
+            <p class="bot-spec">Specific details about this bot.</p>
+            <img src="#" alt="">
+          </div>
+          <div class="swiper-slide">
+            <h3 class="bot-name">Bot-02</h3>
+            <p class="bot-spec">Specific details about this bot.</p>
+            <img src="#" alt="">
+          </div>
+          <div class="swiper-slide">
+            <h3 class="bot-name">Bot-03</h3>
+            <p class="bot-spec">Specific details about this bot.</p>
+            <img src="#" alt="">
+          </div>
+          <div class="swiper-slide">
+            <h3 class="bot-name">Bot-04</h3>
+            <p class="bot-spec">Specific details about this bot.</p>
+            <img src="#" alt="">
+          </div>
+          <div class="swiper-slide">
+            <h3 class="bot-name">Bot-05</h3>
+            <p class="bot-spec">Specific details about this bot.</p>
+            <img src="#" alt="">
+          </div>
+          <div class="swiper-slide">
+            <h3 class="bot-name">Bot-06</h3>
+            <p class="bot-spec">Specific details about this bot.</p>
+            <img src="#" alt="">
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script src="script2.js"></script>
+  </body>
 </html>
