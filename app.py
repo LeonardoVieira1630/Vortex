@@ -35,7 +35,7 @@ def index():
     exchange_info = client.get_exchange_info()
     symbols = exchange_info['symbols']
 
-    return render_template('index2.html', title=title, my_balances=balances, symbols=symbols)
+    return render_template('index.html', title=title, my_balances=balances, symbols=symbols)
 
 # Quando ordenarmos uma compra:
 
