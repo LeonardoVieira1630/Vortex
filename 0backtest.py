@@ -25,12 +25,18 @@ class RSIStrategy(bt.Strategy):
 cerebro = bt.Cerebro()
 
 #data = bt.feeds.GenericCSVData(dataname='daily.csv',dtformat = 2)
-data = bt.feeds.GenericCSVData(dataname='novo.csv',dtformat = 2,timeframe=bt.TimeFrame.Minutes,compression=15)
+#data = bt.feeds.GenericCSVData(dataname='novo.csv',dtformat = 2,timeframe=bt.TimeFrame.Minutes,compression=15)
+
+#março ate jun = 4% lucro
+data = bt.feeds.GenericCSVData(dataname='1.csv', dtformat=2, timeframe=bt.TimeFrame.Days)
 
 cerebro.adddata(data)
 cerebro.addstrategy(RSIStrategy)
 
+print('Starting Portfolio Value: %.2f' % cerebro.broker.getvalue())
 cerebro.run()
+print('Final Portfolio Value: %.2f' % cerebro.broker.getvalue())
+
 cerebro.plot()
 
 
